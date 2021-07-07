@@ -13,8 +13,20 @@ final class BOSDB{
         if(self::$connection->connect_errno){
             App::Log('Databaseconnection failed:'.self::$connection->connect_error);
         }else{
-            App::Log('Database initialized! Databaseconnection successful');
+            App::Log('Database initialized! Connection successful!');
         }
     }
 
+}
+class DataModel{
+    public $table='';
+
+}
+class DataField{
+    public $key ='id';
+    public $datatype='int';
+    public $unique=true;
+    public $value='';
+    public $default='NULL';
+    public $autoincrement=true;
 }

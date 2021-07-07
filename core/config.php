@@ -5,5 +5,6 @@ const APP_CONFIG = array(
     "db_port"=>"3306",
     "db_user"=>"root",
     "db_pwd"=>"",
-    "db_name"=>"boserp"
+    "db_name"=>"boserp",
+    "db_table_prefix"=>"bos"
 );
